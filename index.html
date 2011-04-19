@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title></title>
+<script src="newhomepage/Sunburst/sunburst.js"></script>
+<link rel="stylesheet" type="text/css" href="newhomepage/main.css" />
+<link rel="stylesheet" type="text/css" href="newhomepage/shadow.css" />
+</head>
+<body>
+
+<canvas id="burst1"></canvas>
+
+<div id="paperscraps">
+	<div class="drop-shadow lifted">
+	<p>Matt</p>
+	</div>
+	
+	<div class="drop-shadow lifted">
+	<p>and</p>
+	</div>
+	
+	<div class="drop-shadow lifted">
+	<p>Christy</p>
+	</div>
+	
+	<div class="drop-shadow lifted rotated">
+	<p>.net</p>
+	</div>
+</div>
+
+<div id="redirect"><p><a href="oldindex.php">old homepage</a></p></div>
+
+<script language="javascript">
+var canvas1 = document.getElementById("burst1");
+// force a resize of the canvas to the browser viewport
+var ctx = canvas1.getContext('2d');
+ctx.canvas.width = window.innerWidth;
+ctx.canvas.height = window.innerHeight;
+// http://hslpicker.com helped here
+Sunburst.Draw(canvas1, {bars:60, fatness:5, color:"#ff8533", backcolor:"#ff6600"});
+</script>
+</body>
+</html>

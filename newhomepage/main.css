@@ -1,0 +1,42 @@
+html {
+	font-family: "Andale Mono", Consolas, "Courier New", monospace;
+	font-family: Helvetica, Arial, sans-serif;
+}
+#paperscraps {
+	position: absolute;
+	left: 50%;
+	width: 780px;
+	margin-left: -390px;
+	text-align: center;
+	padding: 0 auto;
+	top: 25%;
+}
+#paperscraps p {
+	text-align: center;
+	font-size: 200%;
+}
+
+#burst1 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	top: 0;
+	height: 100%;
+	left: 0;
+	width: 100%;
+	z-index: -10;
+}
+
+#redirect {
+	font-size: 55%;
+	position: fixed;
+	bottom: -7px;
+	right: 0;
+	margin: 0 4px;
+}
+#redirect a {
+	text-decoration: none;
+}
+#redirect a:hover {
+	text-decoration: underline;
+}
